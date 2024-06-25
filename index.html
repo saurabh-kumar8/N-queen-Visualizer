@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>N-Queen Visualizer</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <h1>N-Queen Visualizer <i class="fas fa-chess-queen"></i></h1>
+  </header>
+  <main class="main-content">
+    <section class="controls">
+      <div class="input-container">
+        <label for="numberbox">Number of Queens:</label>
+        <input type="number" class="numberbox" id="numberbox" required>
+      </div>
+      <div class="slider-container">
+        <label for="slider">Animation Speed:</label>
+        <div class="slider-wrapper">
+          <span class="slider-label">SLOW</span>
+          <input class="slider" id="slider" type="range" min="0" max="100" value="60">
+          <span class="slider-label">FAST</span>
+        </div>
+      </div>
+      <button class="play-button" id="play-button"><i class="fa fa-play" aria-hidden="true"></i> Start</button>
+    </section>
+    <section class="visualization">
+      <div id="queen-arrangement" class="queen-arrangement"></div>
+      <div id="n-queen-board"></div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
